@@ -1,0 +1,28 @@
+{
+  "restaurants": [
+    {
+      "name": "mcDonald Restaurant",
+      "address": "noida sector 110",
+      "email": "mcd@test.com",
+      "id": 3
+    },
+    {
+      "name": "BurgerKing Restaurant",
+      "address": "dehli sector 110",
+      "email": "bKing@test.com",
+      "id": 4
+    },
+    {
+      "name": "Dominos Restaurant",
+      "address": "gurgaon sector 20",
+      "email": "dominos@test.com",
+      "id": 5
+    },
+    {
+      "name": "Halidram King Restaurant",
+      "address": "draka sector 20",
+      "email": "halidram@test.com",
+      "id": 6
+    }
+  ]
+}

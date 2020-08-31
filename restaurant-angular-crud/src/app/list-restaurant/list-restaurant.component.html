@@ -1,0 +1,47 @@
+<h1>list-restaurant works!</h1>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Email</th>
+        <th scope="col">Operations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of collection">
+          <th>{{item.id}}</th>
+          <th [ngStyle]="{'font-weight':'100'}">{{item.name}}</th>
+          <th [ngStyle]="{'font-weight':'100'}">{{item.address}}</th>
+          <th [ngStyle]="{'font-weight':'100'}">{{item.email}}</th>
+          <th><i (click)="deleteRestaurant(item.id)" class="fa fa-trash" [ngStyle]="{'font-size':'10','color':'red','cursor':'pointer'}"></i></th>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
+  <div class="modal" tabindex="-1" role="dialog" id="modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Delete Item?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Do you wants delet this item.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="deleteThis">Yes, sure</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeModal">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
