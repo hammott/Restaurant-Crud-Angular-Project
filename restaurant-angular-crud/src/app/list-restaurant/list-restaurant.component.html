@@ -17,7 +17,12 @@
           <th [ngStyle]="{'font-weight':'100'}">{{item.name}}</th>
           <th [ngStyle]="{'font-weight':'100'}">{{item.address}}</th>
           <th [ngStyle]="{'font-weight':'100'}">{{item.email}}</th>
-          <th><i (click)="deleteRestaurant(item.id)" class="fa fa-trash" [ngStyle]="{'font-size':'10','color':'red','cursor':'pointer'}"></i></th>
+          <th>
+            <a routerLink="/update/{{item.id}}">
+              <i class="fa fa-edit" [ngStyle]="{'font-size':'10','color':'blue','cursor':'pointer'}"></i>
+            </a>
+            <i (click)="deleteRestaurant(item.id)" class="fa fa-trash" [ngStyle]="{'font-size':'10','color':'red','cursor':'pointer'}"></i>
+          </th>
       </tr>
     </tbody>
   </table>

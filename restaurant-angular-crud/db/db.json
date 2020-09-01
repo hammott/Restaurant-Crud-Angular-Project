@@ -2,8 +2,8 @@
   "restaurants": [
     {
       "name": "mcDonald Restaurant",
-      "address": "noida sector 110",
       "email": "mcd@test.com",
+      "address": "noida sector 120",
       "id": 3
     },
     {
@@ -23,6 +23,32 @@
       "address": "draka sector 20",
       "email": "halidram@test.com",
       "id": 6
+    },
+    {
+      "name": "Mr dizy restaurant",
+      "email": "mrdizy@test.com",
+      "address": "Saadatabad farahzadi 95 street tehran 5",
+      "id": 7
+    },
+    {
+      "name": "Shiko Pest Restaurant",
+      "email": "shikopest@test.com",
+      "address": "Mirdamad Blv Tehran Iran",
+      "id": 8
+    }
+  ],
+  "users": [
+    {
+      "name": "Hamid Mottaghian",
+      "email": "Mottaghian.hamid@gmial.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "Mohammad",
+      "email": "mohammad@test.com",
+      "password": "123",
+      "id": 2
     }
   ]
 }

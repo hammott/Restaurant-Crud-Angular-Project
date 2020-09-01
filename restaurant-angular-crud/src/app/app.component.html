@@ -5,11 +5,30 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <button type="button" class="btn btn-primary" [ngStyle]="{'margin-left':'6px','padding':'0'}"><a class="nav-item nav-link" routerLink="add"  [ngStyle]="{'color':'white'}">Add Restaurant</a></button>
-      <button type="button" class="btn btn-primary" [ngStyle]="{'margin-left':'6px','padding':'0'}"><a class="nav-item nav-link" routerLink="update" [ngStyle]="{'color':'white'}">Update Restaurant</a></button>
-      <button type="button" class="btn btn-primary" [ngStyle]="{'margin-left':'6px','padding':'0'}"><a class="nav-item nav-link" routerLink="list" [ngStyle]="{'color':'white'}">List of Restaurant</a></button>
-      <button type="button" class="btn btn-primary" [ngStyle]="{'margin-left':'6px','padding':'0'}"><a class="nav-item nav-link" routerLink="login" [ngStyle]="{'color':'white'}">Login User</a></button>
-      <button type="button" class="btn btn-primary" [ngStyle]="{'margin-left':'6px','padding':'0'}"><a class="nav-item nav-link" routerLink="register" [ngStyle]="{'color':'white'}">Register User</a></button>
+      <button type="button" 
+              class="btn btn-primary" 
+              [ngStyle]="{'margin-left':'6px','padding':'0'}">
+              <a class="nav-item nav-link" 
+              routerLink="add"  [ngStyle]="{'color':'white'}">Add Restaurant</a>
+      </button>
+      <button type="button" 
+              class="btn btn-primary" 
+              [ngStyle]="{'margin-left':'6px','padding':'0'}">
+              <a class="nav-item nav-link" 
+              routerLink="" [ngStyle]="{'color':'white'}">List of Restaurant</a>
+      </button>
+      <button type="button" 
+              class="btn btn-primary" 
+              [ngStyle]="{'margin-left':'6px','padding':'0'}">
+              <a class="nav-item nav-link" 
+              routerLink="login" [ngStyle]="{'color':'white'}">Login User</a>
+      </button>
+      <button type="button" 
+              class="btn btn-primary" 
+              [ngStyle]="{'margin-left':'6px','padding':'0'}">
+              <a class="nav-item nav-link" 
+              routerLink="register" [ngStyle]="{'color':'white'}">Register User</a>
+      </button>
     </div>
   </div>
 </nav>
@@ -17,3 +36,7 @@
 <div class="container">
   <router-outlet></router-outlet>
 </div>
+
+<footer>
+  <p>Register Your Restaurant whith us</p>
+</footer>
